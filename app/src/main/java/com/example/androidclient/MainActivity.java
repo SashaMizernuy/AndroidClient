@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.io.BufferedWriter;
 import java.io.ByteArrayOutputStream;
-import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStreamWriter;
@@ -15,7 +14,6 @@ import java.net.UnknownHostException;
 
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.app.Activity;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -84,7 +82,6 @@ public class MainActivity extends AppCompatActivity {
         protected Void doInBackground(Void... arg0) {
 
             Socket socket = null;
-
 
             try {
                 socket = new Socket(dstAddress, dstPort);
